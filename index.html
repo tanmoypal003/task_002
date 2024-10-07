@@ -3,38 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div>
-      <h1>My Portfolio</h1>
-      <nav>
+      <!-- <a href="#" class="logo">Tanmoy</a> -->
+       
+
+      <nav class="navbar">
+        <h1>Tanmoy</h1>
+
         <ul>
-          <li><a href="#about">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#last_works">Last Works</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#reach_out">Reach Out</a></li>
+          <a href="#about">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#last_works">Last Works</a>
+          <!-- <a href="#testimonials">Testimonials</a> -->
+          <a href="#reach_out">Reach Out</a>
         </ul>
+
+        <i class="fa-solid fa-bars" id="nav_menu"></i>
       </nav>
     </div>
   </header>
   
   <main>
-    <section class="about">
+    <section id="about">
       <div class="container">
-        <h2>Tanmoy Paul</h2>
-        <p>Welcome to my personal portfolio. I'm a web developer with experience in front-end technologies.
+        <h2>I'm Tanmoy Paul</h2>
+        <p>I'm a web developer with experience in front-end technologies.
           I love turning ideas into amazing websites and learning new helpful technological skills.
         </p>
-        <a href="#reach_out" class="button">Let's get started</a>
+      </div>
+      <a href="#" class="cv_button">Download CV</a>
+
+      <div class="home_image">
+        <img src="" alt="developer_photo">
       </div>
     </section>
     
-    <section class="skills">
+    <section id="skills">
       <div class="container">
         <h2>Skills</h2>
         <div class="skill">
@@ -59,7 +72,7 @@
       </div>
     </section>
 
-    <section class="last_works">
+    <section id="last_works">
       <div class="description">
         <h2>Last Works</h2>
         <p>Lorem ipsum dolor sit oamet consectetur, adipisicing elit. Incidunt assumenda atque quaerat. 
@@ -91,9 +104,9 @@
       </div>
     </section>
 
-    <section class="reach_out">
+    <section id="reach_out">
       <h2>Reach Out</h2>
-      <p>I'd love to hear out from your perspective on my workings. Feel free to mail me this way.</p>
+      <p>I'd love to hear out about your perspective on my workings. Feel free to mail me this way.</p>
       <div class="field">
         <label for="">Email</label>
         <input type="text" placeholder="Please enter your mail">
@@ -101,7 +114,7 @@
 
       <div class="field">
         <label for="">Mobile</label>
-        <input type="text" placeholder="Enter mobile">
+        <input type="text" placeholder="Enter mobile no.">
       </div>
 
       <div class="field">
@@ -114,16 +127,12 @@
   </main>
 
   <footer>
-    <div>
-      <ul>
-        <li> <a href="https://www.linkedin.com/">
-          <img src="./images/icons/Linkedin.webp" alt="LinkedIn logo">
-        </a></li>
-  
-        <li> <a href="https://github.com/">
-          <img src="./images/icons/Github.png" alt="GitHub logo">
-        </a></li>
-      </ul>
+    <div class="social_links">
+      <h2>SOCIAL</h2>
+      <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
     </div>
     <p>&copy; Tanmoy Paul</p>
   </footer>
