@@ -16,9 +16,15 @@ body {
   color: #e1e2e2;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  padding: 0.4rem 0 1rem 0;
+}
+
 header nav {
-  height: 15vh;
-  width: 90%;
+  height: 14vh;
+  width: 93%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -78,7 +84,7 @@ header a:hover {
 
 section {
   min-height: 100vh;
-  padding: 2rem 8% 2rem;
+  padding: 3rem 7% 2rem;
 }
 
 .home {
@@ -123,8 +129,8 @@ section {
 }
 
 .heading {
-  margin-bottom: 5rem;
-  text-align: center;
+  margin-top: 80px;
+  text-align: start;
 }
 
 .skill_container {
@@ -133,16 +139,22 @@ section {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  margin: 1.5rem auto;
 }
 
 .skill p {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill i {
+  font-size: 2rem;
+  margin-bottom: .3rem;
 }
 
 .skill_container .skill {
   flex: 1 1 20rem;
   background: #000;
-  padding: 4rem 3rem;
+  padding: 2.2rem;
   border-radius: 1.5rem;
   text-align: center;
   transition: .5s ease;
@@ -151,6 +163,15 @@ section {
 .skill_container .skill:hover {
   box-shadow: 0 0 .7rem .1rem #e1e2e2;
   transform: scale(1.02);
+}
+
+.skill {
+  color: #e1e2e2;
+}
+
+.skill h3 {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
 }
 
 footer {
