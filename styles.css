@@ -174,6 +174,50 @@ section {
   margin-bottom: .5rem;
 }
 
+.contact_heading {
+  margin: 3.5rem 0 0 0;
+  text-align: center;
+}
+
+.contact_heading h2 {
+  color: #fb8122;
+}
+
+.reach_out form {
+  max-width: 70rem;
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+}
+
+.reach_out form .input_field {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.reach_out form .input_field input,
+.reach_out form .input_field textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin: .3rem;
+  background-color: #e1e2e2;
+  color: #1D2228;
+  border-radius: .5rem;
+}
+
+.reach_out form .input_field input {
+  width: 30%;
+}
+
+.reach_out form .input_field textarea {
+  width: 60.5%;
+}
+
+.reach_out form button {
+  margin-top: 1rem;
+}
+
 footer {
   padding: 20px 0;
 }
