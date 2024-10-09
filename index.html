@@ -8,6 +8,19 @@
 
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "81f-PpeGcxL93uZvB",
+        });
+    })();
+  </script>
+
+  <script src="/script.js"></script>
 </head>
 
 <body>
@@ -132,24 +145,24 @@
       <form action="">
         <div class="input_field">
           <!-- <label for="">Name  </label> -->
-          <input type="text" placeholder="Enter your name">
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
           <!-- <label for="">Mobile  </label> -->
-          <input type="text" placeholder="Enter your mobile no.">
+          <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile no.">
         </div>
   
         <div class="input_field">
-          <input type="text" placeholder="Objective of mail">
+          <input type="text" id="objective" name="objective" placeholder="Objective of mail" required>
           <!-- <label for="">Email  </label> -->
-          <input type="text" placeholder="Enter your mail">
+          <input type="text" id="mail" name="mail" placeholder="Enter your mail" required>
         </div>
         
         <div class="input_field">
           <!-- <label for="">Message  </label> -->
-          <textarea name="" id="" cols="40" rows="8" placeholder="your message"></textarea>
+          <textarea id="message" name="message" cols="40" rows="8" placeholder="your message" required></textarea>
         </div>
   
-        <button class="button" type="submit">Submit</button>
+        <button class="button" type="submit" onclick="sendMail()">Send</button>
       </form>
     </section>
   </main>
