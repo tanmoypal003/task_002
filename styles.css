@@ -194,13 +194,13 @@ section {
 
 .project img {
   width: 100%;
-  /* transition: .5s ease; */
-  opacity: .5;
+  transition: .5s ease;
 }
 
-.project:hover {
+.project:hover img {
+  opacity: .6;
+  transform: scale(1.1);
   box-shadow: 0 0 .5rem #e1e2e2;
-  transform: scale(1.0);
 }
 
 .project .project_detail {
@@ -212,8 +212,13 @@ section {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  padding: 0 .7rem .2rem .7rem;
+  padding: 0 .7rem .5rem .7rem;
+  transform: translateY(100%);
   transition: .5s ease;
+}
+
+.project:hover .project_detail {
+  transform: translateY(0);
 }
 
 .contact_heading {
