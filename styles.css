@@ -19,11 +19,12 @@ body {
 header {
   position: fixed;
   width: 100%;
-  padding: 0.4rem 0 1rem 0;
+  padding: 0.4rem 0 .6rem 0;
+  background-color: #1D2228;
 }
 
 header nav {
-  height: 14vh;
+  height: 12vh;
   width: 93%;
   margin: 0 auto;
   display: flex;
@@ -266,7 +267,7 @@ section {
 }
 
 footer {
-  padding: 20px 0;
+  text-align: right;
 }
 
 .social_links a {
@@ -276,17 +277,16 @@ footer {
   width: 3.6rem;
   height: 3.6rem;
   background: #000;
-  /* border: .15rem solid #02cef3; */
   border-radius: 50%;
   font-size: 2rem;
   color: #fb8122;
-  margin: 2rem 1rem 1rem 1rem;
+  margin: 1rem;
 }
 
 .social_links a:hover {
   background-color: #000;
   color: #fb8122;
-  box-shadow: 0 0 .7rem .15rem #e1e2e2;
+  box-shadow: 0 0 .7rem #e1e2e2;
 }
 
 /* .social_links h2 {
