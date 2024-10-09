@@ -76,7 +76,7 @@ header a:hover::before {
 }
 
 header a:hover {
-  color: #e1e2e2;
+  color: #000;
 }
 
 #nav_menu {
@@ -117,7 +117,7 @@ section {
   padding: .7rem 1.6rem;
   background-color: #fb8122;
   border-radius: 4rem;
-  color: #e1e2e2;
+  color: #000;
   letter-spacing: .05rem;
   font-weight: 600;
 }
@@ -153,7 +153,7 @@ section {
 }
 
 .skill_container .skill {
-  flex: 1 1 20rem;
+  flex: 1 1 18rem;
   background: #000;
   padding: 2.2rem;
   border-radius: 1.5rem;
