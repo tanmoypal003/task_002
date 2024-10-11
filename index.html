@@ -25,8 +25,7 @@
 
 <body>
   <header class="header">
-    <div>
-      <!-- <a href="#" class="logo">Tanmoy</a> -->
+    <div >
 
       <nav class="navbar">
         <h1>Tanmoy</h1>
@@ -38,8 +37,9 @@
           <!-- <a href="#testimonials">Testimonials</a> -->
           <a href="#reach_out">Reach Out</a>
         </ul>
-
-        <i class="fa-solid fa-bars" id="nav_menu"></i>
+        <button id="nav_menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </nav>
     </div>
   </header>
@@ -193,4 +193,12 @@
     <!-- <p>&copy; Tanmoy Paul</p> -->
   </footer>
 </body>
+
+<script>
+  const nav_button = document.getElementById("nav_menu");
+  nav_button.addEventListener("click", () => {
+    document.querySelector("header ul").classList.toggle("appear")
+  });
+</script>
+
 </html>

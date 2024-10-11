@@ -83,7 +83,15 @@ header a:hover {
 }
 
 #nav_menu {
+  all: unset;
+  font-size: 1.4rem;
+  transition: .4s ease-out;
   display: none;
+}
+
+#nav_menu:hover {
+  transform: rotate(180deg);
+  color: #fb8122;
 }
 
 section {
@@ -117,17 +125,17 @@ section {
 .resume_button {
   font-size: 1.1rem;
   display: inline-block;
-  padding: .8rem 1.2rem;
+  padding: .7rem 1.3rem;
   background-color: #fb8122;
   border-radius: 4rem;
   color: #000;
   letter-spacing: .05rem;
-  font-weight: 700;
+  font-weight: 550;
 }
 
 .home_image img {
-  width: 25vw;
-  height: 25vw;
+  width: 30vw;
+  height: 30vw;
   border-radius: 20vw;
   margin: 0 0 0 5rem;
 }
@@ -318,3 +326,44 @@ footer {
   display: inline;
   text-align: start;
 } */
+
+
+@media only screen and (max-width: 850px) {
+  #nav_menu {
+    display: block;
+  }
+
+  header ul {
+    position: absolute;
+    right: 5vh;
+    top: 11vh;
+    width: 200px;
+    height: 400px;
+    border-top-right-radius: .7rem;
+    border-bottom-left-radius: .7rem;
+    background: #00000075;
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul.appear {
+    display: none;
+  }
+
+  .home {
+    flex-direction: column;
+    gap: 1.7rem;
+    padding-bottom: 2rem;
+  }
+
+  .home_content {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .resume_button {
+    margin: auto;
+  }
+}
