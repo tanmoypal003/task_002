@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -111,15 +114,15 @@ section {
   margin-bottom: 1.5rem;
 }
 
-.button {
-  font-size: 1.2rem;
+.resume_button {
+  font-size: 1.1rem;
   display: inline-block;
-  padding: .7rem 1.6rem;
+  padding: .8rem 1.2rem;
   background-color: #fb8122;
   border-radius: 4rem;
   color: #000;
   letter-spacing: .05rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .home_image img {
@@ -134,17 +137,29 @@ section {
   text-align: start;
 }
 
+.button {
+  font-size: .9rem;
+  display: inline-block;
+  padding: .6rem 1.05rem;
+  background-color: #fb8122;
+  border-radius: 4rem;
+  color: #000;
+  letter-spacing: .05rem;
+  font-weight: 600;
+}
+
 .skill_container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   margin: 1.5rem auto;
 }
 
 .skill p {
   margin-bottom: 1.5rem;
+  font-size: .9rem;
 }
 
 .skill i {
@@ -153,7 +168,7 @@ section {
 }
 
 .skill_container .skill {
-  flex: 1 1 18rem;
+  flex: 1 1 17rem;
   background: #000;
   padding: 2.2rem;
   border-radius: 1.5rem;
@@ -171,12 +186,12 @@ section {
 }
 
 .skill h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: .5rem;
 }
 
 .last_works h2 {
-  margin: 4.5rem 0 2rem 0;
+  margin: 4.5rem 0 3rem 0;
 }
 
 .projects_container {
@@ -195,31 +210,41 @@ section {
 
 .project img {
   width: 100%;
-  transition: .5s ease;
+  transition: .3s ease;
 }
 
 .project:hover img {
   opacity: .6;
   transform: scale(1.1);
-  box-shadow: 0 0 .5rem #e1e2e2;
 }
 
 .project .project_detail {
   position: absolute;
+  left: 0;
   width: 100%;
+  bottom: 0;
   height: 100%;
   color: #e1e2e2;
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   align-items: center;
+  text-align: center;
   flex-direction: column;
-  padding: 0 .7rem .5rem .7rem;
+  padding: 1rem;
   transform: translateY(100%);
-  transition: .5s ease;
+  transition: .3s ease;
+}
+
+.project_detail p {
+  font-size: .85rem;
 }
 
 .project:hover .project_detail {
   transform: translateY(0);
+}
+
+.project:hover {
+  box-shadow: 0 0 .5rem #e1e2e2;
 }
 
 .contact_heading {
